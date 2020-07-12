@@ -6,7 +6,7 @@
 # docker build -t my-scrapyd-onbuild -f ./Dockerfile.scrapyd-onbuild .
 #
 
-FROM my-scrapyd:py3
+FROM mkjiau/docker-scrapyd:py3-1.0.0 
 # MAINTAINER EasyPi Software Foundation
 
 ONBUILD ADD ./*.txt /etc/scrapyd/
